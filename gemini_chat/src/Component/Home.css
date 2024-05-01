@@ -1,0 +1,12 @@
+main {
+  width: 95%; /* Set a width for the div */
+  max-height: 100%;
+  margin: 0 auto;
+  border: 2px solid #ddd;
+}
+main h4 {
+  text-align: center;
+}
+.search-bar {
+  min-width: 100%;
+}

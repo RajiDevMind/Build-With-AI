@@ -1,0 +1,17 @@
+.msg-board {
+}
+.chat-message {
+  font-size: 1.2rem;
+  background: rgba(102, 102, 102, 0.3);
+  margin: 8px;
+  border-radius: var(--radius);
+}
+.user {
+  color: #000;
+}
+.msgs {
+  text-align: left;
+  color: black;
+  padding: 5px;
+  border-radius: var(--radius);
+}

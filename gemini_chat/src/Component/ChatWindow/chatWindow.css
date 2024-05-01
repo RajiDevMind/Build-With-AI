@@ -1,0 +1,94 @@
+main {
+  width: 90%;
+  min-height: 90vh;
+  margin: 0 auto;
+  border: 2px solid #ddd;
+  border-radius: var(--radius);
+  box-shadow: 5px 7px 1px #000000;
+  background-image: url("chat.png");
+  background-position: right top;
+  background-attachment: scroll;
+  background-size: 200px 300px;
+  object-fit: cover;
+}
+.chat-window {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+  text-align: center;
+  /* background: red; */
+}
+
+.message-list {
+  flex: 1;
+  /* overflow-y: scroll; */
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+  height: 30px;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 0 3px #000000;
+}
+.text-input,
+.send-btn {
+  display: flex;
+  justify-content: center;
+
+  border: none;
+  outline: none;
+  background: #fff;
+  font-size: 1rem;
+  width: 85%;
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+}
+.text-input {
+  margin: 0 5px;
+}
+.send-btn {
+  width: 15%;
+  padding-top: 5px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+.send-btn:hover {
+  transition: 1s ease;
+  background: #cccccc;
+  color: #000000;
+}
+.send-btn:active {
+  border: 2px solid;
+}
+
+/* .img-bar {
+  border: 2px solid;
+} */
+.image-icon {
+  position: absolute;
+  right: 33px;
+  color: red;
+  border-radius: var(--radius);
+}
+
+@media only screen and (max-width: 500px) {
+  .text-input,
+  .send-btn {
+    font-size: 0.8rem;
+    width: 90px;
+  }
+}
